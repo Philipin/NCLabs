@@ -10,7 +10,9 @@ public class Analyzer {
     private int[] array;
 
 	public Analyzer(int[] arr, Filler filler, Sorters sorter) {
-        if (arr == null || arr.length == 0) return;
+        if (arr == null || arr.length == 0) {
+            throw new IllegalArgumentException("Illegal Argument. Check the type and/or content");
+        }
         array = new int[arr.length];
         System.arraycopy(arr, 0, array, 0, arr.length);
 		this.sorter = sorter;

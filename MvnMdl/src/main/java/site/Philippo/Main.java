@@ -7,7 +7,7 @@ import site.Philippo.analyzer.*;
 public class Main {
 
 	public static void main(String[] args) {
-		int[] testLengthOfArray = {1, 100, 10000};
+		int[] testLengthOfArray = {2, 100, 10000};
 
 		Filler[] arrayOfFillers = new Filler[4];
 
@@ -62,5 +62,4 @@ public class Main {
 			}
 		}
 	}
-
 }
