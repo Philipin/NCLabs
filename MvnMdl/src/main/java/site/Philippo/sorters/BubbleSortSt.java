@@ -42,4 +42,9 @@ public class BubbleSortSt extends BubbleSort {
 			if(!flag) break;
 		}
 	}
+
+	@Override
+	public String toString() {
+		return "Bubble sort straight";
+	}
 }

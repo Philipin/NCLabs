@@ -23,4 +23,9 @@ public class ArraysSort extends Sorters {
 	public void doSort(int[] arr, int minInd, int maxInd) {
 		Arrays.sort(arr, minInd, maxInd);
 	}
+
+	@Override
+	public String toString() {
+		return "Arrays sort";
+	}
 }

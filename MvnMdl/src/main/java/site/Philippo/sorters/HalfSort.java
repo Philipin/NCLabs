@@ -86,4 +86,9 @@ public class HalfSort extends Sorters {
         twoDimResultedArray[1] = Arrays.copyOfRange(array, i, array.length);
         return twoDimResultedArray;
     }
+
+    @Override
+    public String toString() {
+        return "Half division with " + sorter.toString();
+    }
 }

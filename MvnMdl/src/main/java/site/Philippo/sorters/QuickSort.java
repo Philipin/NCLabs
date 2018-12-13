@@ -54,5 +54,8 @@ public class QuickSort extends Sorters {
         actuallyDoSort(arr, cur + 1, end);
     }
 
-
+    @Override
+    public String toString() {
+        return "Quick sort";
+    }
 }
