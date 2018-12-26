@@ -30,7 +30,7 @@ public class BubbleSortSt extends BubbleSort {
 	 * @param maxInd End index of the interval, exclusive
 	 */
 	private void actuallyDoSort(int[] arr, int minInd, int maxInd) {
-		
+
 		for (int i = 0; i < maxInd; i++) {
 			boolean flag = false;
 			for (int j = minInd; j < (maxInd-i); j++) {

@@ -99,9 +99,11 @@ public class Fillers {
 	 * @throws IllegalArgumentException Check the parameters you use
 	 */
 	private static void paramCheck(int[] arr, int start, int end){
-		if (arr == null || arr.length == 0 || start == end ||
+		if (
+				arr == null || arr.length == 0 || start == end ||
 				end > start || end > arr.length - 1 ||
 				start > arr.length - 1 || start < 0 || end < 0)
+
 			throw new IllegalArgumentException("Parameters correctness test failed");
 	}
 }

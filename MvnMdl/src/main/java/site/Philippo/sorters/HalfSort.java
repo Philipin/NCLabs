@@ -23,10 +23,6 @@ public class HalfSort extends Sorters {
         this.sorter = sorter;
     }
 
-    public Sorters getSorter() {
-        return sorter;
-    }
-
     /**
      * Sorting array with half-division method
      *
