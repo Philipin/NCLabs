@@ -40,6 +40,15 @@ public class HalfSort extends Sorters {
     }
 
     /**
+     * Returns a sorter
+     *
+     * @return Sorter
+     */
+    public Sorters getSorter() {
+        return sorter;
+    }
+
+    /**
      * Method to merge two arrays of integers
      *
      * @param array1 First part of array to merge
