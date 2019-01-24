@@ -10,6 +10,7 @@ import java.util.Arrays;
  *
  * @author Larin
  */
+@Sorter(name = "HalfSort")
 public class HalfSort extends Sorters {
 
     private final Sorters sorter;
@@ -19,6 +20,7 @@ public class HalfSort extends Sorters {
      *
      * @param sorter Sorter, using in method
      */
+
     public HalfSort(Sorters sorter) {
         this.sorter = sorter;
     }

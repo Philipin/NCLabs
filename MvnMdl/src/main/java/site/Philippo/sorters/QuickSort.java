@@ -8,6 +8,7 @@ package site.Philippo.sorters;
  *
  * @author Larin
  */
+@Sorter(name = "QuickSort")
 public class QuickSort extends Sorters {
 
     /**

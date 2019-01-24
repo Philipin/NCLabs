@@ -10,6 +10,7 @@ import java.util.Arrays;
  *
  * @author Larin
  */
+@Sorter(name = "ArraysSort")
 public class ArraysSort extends Sorters {
 
 	/**

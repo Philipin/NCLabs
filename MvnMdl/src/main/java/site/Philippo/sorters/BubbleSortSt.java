@@ -8,6 +8,7 @@ package site.Philippo.sorters;
  *
  * @author Larin
  */
+@Sorter(name = "BubbleSortSt")
 public class BubbleSortSt extends BubbleSort {
 
 	/**
