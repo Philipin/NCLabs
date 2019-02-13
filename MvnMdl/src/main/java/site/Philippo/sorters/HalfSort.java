@@ -36,7 +36,8 @@ public class HalfSort extends Sorters {
     public void doSort(int[] arr, int minInd, int maxInd) {
         int[][] twoDimResultedArray = split(arr, (arr.length / 2));
         for (int[] array : twoDimResultedArray) {
-            sorter.doSort(array);
+            new Thread(() -> sorter.doSort(array)).start();
+            //sorter.doSort(array);
         }
         System.arraycopy(merge(twoDimResultedArray[0], twoDimResultedArray[1]), 0, arr, 0, arr.length);
     }
@@ -57,7 +58,7 @@ public class HalfSort extends Sorters {
      * @param array2 Second part of array to merge
      * @return Merged array
      */
-    private int[] merge(int[] array1, int[] array2) {
+    private synchronized int[] merge(int[] array1, int[] array2) {
 
         int finalLength = array1.length + array2.length;
         int[] result = new int[finalLength];

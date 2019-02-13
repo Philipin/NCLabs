@@ -22,9 +22,7 @@ public class ArraysSort extends Sorters {
 	 */
 	@Override
 	public void doSort(int[] arr, int minInd, int maxInd) {
-		if (arr == null || arr.length == 0 || minInd == maxInd ||
-				maxInd > minInd || maxInd > arr.length - 1 ||
-				minInd > arr.length - 1 || minInd < 0 || maxInd < 0) return;
+		if (arr == null || arr.length == 0) return;
 		Arrays.sort(arr, minInd, maxInd);
 	}
 
